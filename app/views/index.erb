@@ -6,9 +6,9 @@
   </head>
   <body>
     <h1>Recipes</h1>
-    <% @recipes.each do |post| %>
+    <% @recipes.each do |recipe| %>
     <div class="recipe">
-      <p><%= post.id %>. <a href="/posts/#{post.id}"><%= post.name %></a></p><br>
+      <p><%= post.id %>. <a href="/recipes/#{recipe.id}"><%= post.name %></a></p><br>
     </div>
     <% end %>
   </body>
